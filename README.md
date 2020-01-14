@@ -12,7 +12,9 @@
 > **Project:** TBD ([Space Lander](proj/doc/report.pdf))
 
 
+
 **DISCLAIMER**:
+
 This repository was created for educational purposes and we do not take responsibility for anything related to its content.\
 You are free to use any code or algorithm you find, at your own risk.\
 Notice that this repository is public so if you plan on reusing code you find here you should be careful:
