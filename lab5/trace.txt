@@ -1,0 +1,20 @@
+@lcflib.a:2019, lcf_start
+  video_test_controller()
+  @video_card.c:282, get_vbe_contr_info
+    lm_alloc(sizeof(vbe_mode_info_t), &mem_map)
+  < lm_alloc(256, addr: 0xeffff440 [phys: 0x0008f000, virt: 0xefb8c000, size: 256 bytes]) -> (ret: 0xefb8c000)
+  @video_card.c:302, get_vbe_contr_info
+    sys_int86(&r86)
+  > sys_int86(addr: 0xeffff418 [AX: 4f00, BX: 0000, CX: 0000, DX: 0000, ES: 8000, DI: f000])
+  < sys_int86(addr: 0xeffff418 [AX: 004f, BX: 0000, CX: 0000, DX: 0000, ES: 8000, DI: f000]) -> (ret: 0)
+  @video_card.c:325, get_vbe_contr_info
+    lm_free(&mem_map)
+  < lm_free(addr: 0xeffff440 [phys: 0x0008f000, virt: 0xefb8c000, size: 256 bytes]) -> (ret: 1)
+  @video_card.c:348, get_vbe_contr_info
+    lm_free(&mem_map)
+  < lm_free(addr: 0xeffff440 [phys: 0x0008f000, virt: 0xefb8c000, size: 256 bytes]) -> (ret: 0)
+  @lab5.c:438, video_test_controller
+    vg_display_vbe_contr_info(&c_info)
+  > vg_display_vbe_contr_info(addr: 0xeffff688)
+  < vg_display_vbe_contr_info(addr: 0xeffff688) -> (ret: 0)
+< video_test_controller() -> (ret: 0)

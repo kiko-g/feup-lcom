@@ -1,0 +1,1847 @@
+@lcflib.a:2019, lcf_start
+  timer_test_int(time)
+> timer_test_int(5)
+  @lab2.c:47, timer_test_int
+    timer_subscribe_int(&irq_set)
+  > timer_subscribe_int(addr: 0xeffff72b [0])
+    @timer.c:65, timer_subscribe_int
+      sys_irqsetpolicy(TIMER0_IRQ, IRQ_REENABLE, &hook_id)
+    > sys_irqsetpolicy(0, 1, addr: 0x822dbac [0])
+    < sys_irqsetpolicy(0, 1, addr: 0x822dbac [10]) -> (ret: 0)
+    @timer.c:69, timer_subscribe_int
+      printf("\t%d\n", hook_id)
+      "	10"
+  < timer_subscribe_int(addr: 0xeffff72b [1]) -> (ret: 0)
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:71, timer_test_int
+    timer_print_elapsed_time()
+    "timer_test_int:timer_print_elapsed_time 1 s"
+  < timer_print_elapsed_time() -> (ret: 1)
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:71, timer_test_int
+    timer_print_elapsed_time()
+    "timer_test_int:timer_print_elapsed_time 2 s"
+  < timer_print_elapsed_time() -> (ret: 2)
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:71, timer_test_int
+    timer_print_elapsed_time()
+    "timer_test_int:timer_print_elapsed_time 3 s"
+  < timer_print_elapsed_time() -> (ret: 3)
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:71, timer_test_int
+    timer_print_elapsed_time()
+    "timer_test_int:timer_print_elapsed_time 4 s"
+  < timer_print_elapsed_time() -> (ret: 4)
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:55, timer_test_int
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff6e0, addr: 0xeffff724)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
+  @lab2.c:67, timer_test_int
+    timer_int_handler()
+  @lab2.c:71, timer_test_int
+    timer_print_elapsed_time()
+    "timer_test_int:timer_print_elapsed_time 5 s"
+  < timer_print_elapsed_time() -> (ret: 5)
+  @lab2.c:85, timer_test_int
+    timer_unsubscribe_int()
+    @timer.c:79, timer_unsubscribe_int
+      printf("\t%d\n", hook_id)
+      "	10"
+    @timer.c:80, timer_unsubscribe_int
+      sys_irqrmpolicy(&hook_id)
+    > sys_irqrmpolicy(addr: 0x822dbac [10])
+    < sys_irqrmpolicy(addr: 0x822dbac [10]) -> (ret: 0)
+    @timer.c:84, timer_unsubscribe_int
+      printf("\t%d\n", hook_id)
+      "	10"
+< timer_test_int(5) -> (ret: 0)

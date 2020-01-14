@@ -1,0 +1,8 @@
+	10
+timer_test_int:timer_print_elapsed_time 1 s
+timer_test_int:timer_print_elapsed_time 2 s
+timer_test_int:timer_print_elapsed_time 3 s
+timer_test_int:timer_print_elapsed_time 4 s
+timer_test_int:timer_print_elapsed_time 5 s
+	10
+	10
