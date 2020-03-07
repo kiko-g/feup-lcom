@@ -4,12 +4,12 @@
 >
 > **Pratical works of:** [Francisco Gonçalves](https://github.com/kiko-g) and [Miguel Pinto](https://github.com/MiguelDelPinto)
 >
-> **Lab 2:** TBD\
-> **Lab 3:** TBD\
-> **Lab 4:** TBD\
-> **Lab 5:** TBD
+> **Lab 2:** 100/100\
+> **Lab 3:** 95/100\
+> **Lab 4:** 93/100\
+> **Lab 5:** 91/100
 >
-> **Project:** TBD ([Space Lander](proj/doc/report.pdf))
+> **Project:** 19/20 ([Space Lander](proj/doc/report.pdf))
 
 
 
