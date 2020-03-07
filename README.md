@@ -1,17 +1,23 @@
 # LCOM 2019-2020 repository
 
-> **Course:** Laboratório de Computadores ([LCOM @ SiFEUP](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=419993)) | *Computer Laboratories*
->
-> **Pratical works of:** [Francisco Gonçalves](https://github.com/kiko-g) and [Miguel Pinto](https://github.com/MiguelDelPinto)
->
-> **Lab 2:** 100/100\
-> **Lab 3:** 95/100\
-> **Lab 4:** 93/100\
-> **Lab 5:** 91/100
+|      Project owners    |
+| :-------------------:  |
+| [Francisco Gonçalves](https://github.com/kiko-g)|
+| [Miguel Pinto](https://github.com/MiguelDelPinto)|
+
+
+---
+**Course:** Laboratório de Computadores ([LCOM @ SiFEUP](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=419993)) | *Computer Laboratories*
+
+> **Lab 2**: 100/100\
+> **Lab 3**: 95/100\
+> **Lab 4**: 93/100\
+> **Lab 5**: 91/100
 >
 > **Project:** 19/20 ([Space Lander](proj/doc/report.pdf))
 
 
+---
 
 **DISCLAIMER**:
 
