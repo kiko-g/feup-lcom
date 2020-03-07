@@ -20,4 +20,4 @@ You are free to use any code or algorithm you find, at your own risk.\
 Notice that this repository is public so if you plan on reusing code you find here you should be careful:
 
  - Your teachers can also find this repository
- - If you're taking this course (LCOM), be extra careful. We strongly reccomend that you don't copy code from here, since the teachers of this course have powerful algorithms that allow them to compare your code to anyone else's, provided they have already completed LCOM. However, this doesn't mean that you should'nt look at the implementations in here.
+ - If you're taking this course (LCOM), be extra careful. We strongly reccomend that you don't copy code from here, since the teachers of this course have powerful algorithms that allow them to compare your code to anyone else's, provided they have already completed LCOM. However, this doesn't mean that you shouldn't look at the implementations in here.
